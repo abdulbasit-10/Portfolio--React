@@ -12,17 +12,16 @@ const Hero = () => {
                         Abdul Basit</h1>
                    <span 
                     className='bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 
-                    bg-clip-text text-4xl tracking-tight text-transparent'>Frontend Web Developer</span>
+                    bg-clip-text text-4xl tracking-tight text-transparent font-bold'>MERN Stack Developer</span>
                     <p
-                    className='my-2 max-w-xl py-4 tracking-tighter'>I am a dedicated and 
-                    versatile MERN stack developer with a passion for creating 
-                    efficient and user-friendly web applications. I have worked with a variety of 
-                    technologies, including HTML, CSS, Bootstrap, JavaScript, React.js, and Tailwind CSS. 
-                    My journey in web development began with a deep curiosity about how things work,
-                    and it has evolved into a career where I continuously strive to learn and adapt to new 
-                    challenges. I thrive in collaborative environments and enjoy solving complex problems 
-                    to deliver high-quality solutions.Outside of coding, I enjoy staying active, exploring 
-                    new technologies, and contributing to open-source projects.
+                    className='my-2 max-w-xl py-4 tracking-tighter'>I am a dedicated and versatile MERN Stack 
+                    Developer with a passion for building efficient, scalable, and user-friendly web applications. 
+                    My expertise spans both frontend and backend, working with technologies such as HTML, CSS, 
+                    Bootstrap, Tailwind CSS, JavaScript, React.js, Node.js, Express.js, and MongoDB. I enjoy 
+                    designing responsive, intuitive interfaces while also developing secure APIs and managing 
+                    databases for full-stack solutions. I thrive in collaborative environments, love solving 
+                    complex problems, and continuously adapt to new challenges. Outside of coding, I enjoy 
+                    exploring emerging technologies, staying active, and contributing to open-source projects.
                     </p>
                 </div>
             </div>

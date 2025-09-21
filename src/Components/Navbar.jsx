@@ -3,7 +3,7 @@ import logo from '../assets/logo.png';
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { HiMenu, HiX } from "react-icons/hi";
-
+import { SiUpwork } from "react-icons/si";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -20,11 +20,14 @@ const Navbar = () => {
           <a href="https://www.linkedin.com/in/abdul-basit-1039b522b/" target="_blank" rel="noopener noreferrer">
             <FaLinkedin />
           </a>
-          <a href="https://github.com/tot3110" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/abdulbasit-10" target="_blank" rel="noopener noreferrer">
             <FaGithub />
           </a>
-          <a href="https://x.com/ba61256888?s=21" target="_blank" rel="noopener noreferrer">
+          {/* <a href="https://x.com/ba61256888?s=21" target="_blank" rel="noopener noreferrer">
             <FaSquareXTwitter />
+          </a> */}
+          <a href="https://www.upwork.com/freelancers/~01e7e47f2d13ebf307" target="_blank" rel="noopener noreferrer">
+            <SiUpwork />
           </a>
         </div>
 

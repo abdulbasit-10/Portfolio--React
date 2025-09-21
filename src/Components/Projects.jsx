@@ -5,7 +5,7 @@ import project3 from '../assets/Project3.png';
 
 const projectData = [
   {
-    title: 'Dashboard Project',
+    title: 'Airbnb Clone',
     description:
       'A fully functional dashboard with features like Add Plants, Get Plants, Update and Delete Plants, Transfer details, Saving details and user authentication.',
     tech: ['HTML', 'Tailwind CSS', 'React'],
@@ -13,7 +13,7 @@ const projectData = [
     alt: 'Dashboard Project',
   },
   {
-    title: 'Portfolio Project',
+    title: 'JKD Pakistan',
     description:
       'A portfolio project built using JavaScript (along with HTML and Tailwind CSS) to showcase your skills, projects, and contact information. It reflects technical and design abilities.',
     tech: ['HTML', 'Tailwind CSS', 'Javascript'],
@@ -21,7 +21,7 @@ const projectData = [
     alt: 'Portfolio Project',
   },
   {
-    title: 'Rock, Paper, Scissor Game',
+    title: 'Planto Admin Dashboard',
     description:
       'A simple Rock, Paper, Scissors game. Rules: Rock beats Scissors, Scissors beats Paper, Paper beats Rock.',
     tech: ['HTML', 'CSS', 'Javascript'],
