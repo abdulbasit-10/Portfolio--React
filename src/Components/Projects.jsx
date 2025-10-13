@@ -5,12 +5,12 @@ import project3 from '../assets/Project3.png';
 
 const projectData = [
   {
-    title: 'Airbnb Clone',
+    title: 'Avicenna Enterprise Solution',
     description:
-      'A fully functional dashboard with features like Add Plants, Get Plants, Update and Delete Plants, Transfer details, Saving details and user authentication.',
-    tech: ['HTML', 'Tailwind CSS', 'React'],
+      'Avicenna Enterprise Solutions delivers innovative web, mobile, and AI-driven digital solutions that help businesses grow with quality, reliability, and scalability.',
+    tech: ['HTML', 'Tailwind CSS', 'React.js', 'Node.js', 'Express.js'],
     image: project1,
-    alt: 'Dashboard Project',
+    alt: 'Avicenna Enterprise Solution Project',
   },
   {
     title: 'JKD Pakistan',
@@ -21,12 +21,12 @@ const projectData = [
     alt: 'Portfolio Project',
   },
   {
-    title: 'Planto Admin Dashboard',
+    title: 'Limelight Performance Tracking Dashboard',
     description:
-      'A simple Rock, Paper, Scissors game. Rules: Rock beats Scissors, Scissors beats Paper, Paper beats Rock.',
-    tech: ['HTML', 'CSS', 'Javascript'],
+      'A compact, data-driven dashboard that visualizes sales, footfall, product performance and conversion metrics to help retail teams monitor performance and act on insights in real time.',
+    tech: ['HTML', 'TailwindCSS', 'Javascript', 'React.js', 'Express.js'],
     image: project3,
-    alt: 'Rock Paper Scissor Game',
+    alt: 'Limelight Dashboard',
   },
 ];
 
