@@ -7,14 +7,15 @@ const Experience = () => {
 
       <div className="p-6 rounded-lg mx-auto">
         <h2 className="text-2xl font-semibold text-white">MERN Stack Developer</h2>
-        <p className="text-sm font-bold">April 2025 - Present</p>
+        <p className="text-sm">April 2025 - October 2025</p>
         <h3 className="text-lg mb-4">Encoder Bytes Pvt Limited</h3>
 
         <p className="mb-4">
-          Currently working as a MERN Stack Developer, skilled in building scalable web applications. Experienced in
- Javascript, React, Next, and Tailwind CSS for responsive frontends, and Node.js, Express, and MongoDB for
- secure and efficient backends. Focused on performance, API integration, and delivering seamless user
- experiences.
+          I am a MERN Stack Developer with 6 months of hands-on experience building full-stack web applications. Over this period, I gained practical skills in JavaScript, React, Next.js, and Tailwind CSS to create responsive, modern, and user-friendly interfaces.
+
+On the backend, I worked with Node.js, Express.js, and MongoDB to develop secure APIs, manage databases, and build scalable server-side logic. I learned authentication, API integration, state management, and performance optimization while following clean-code and best development practices.
+
+My focus has been on creating real-world solutions with smooth user experiences, strong functionality, and reliable performance across the full development lifecycle.
         </p>
 
         <div className="flex flex-wrap gap-2">
@@ -33,10 +34,11 @@ const Experience = () => {
         <h3 className="text-lg mb-4">Zgalleria</h3>
 
         <p className="mb-4">
-            As aLead Web Developer, I was responsible for designing, developing, and maintaining the company’s website
- and web applications. I built the site using modern technologies such as HTML, CSS, JavaScript, and React,
- ensuring responsive design and smooth functionality. I also handled ongoing updates, performance
- optimization, and collaborated with cross-functional teams to deliver high-quality solutions.
+           As a Web Developer, I was responsible for designing, developing, and maintaining the company’s website and web applications. I worked with modern technologies like HTML, CSS, JavaScript, and React to build responsive, user-friendly, and high-performance interfaces.
+
+During this period, I also designed and developed the website for Zgalleria, ensuring a modern layout, smooth functionality, and an optimized user experience.
+
+My role included adding new features, improving UI/UX, fixing bugs, and optimizing overall site performance. I collaborated with different teams to deliver clean, scalable, and reliable web solutions while following best development practices.
 
         </p>
 

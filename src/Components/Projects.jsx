@@ -11,6 +11,7 @@ const projectData = [
     tech: ['HTML', 'Tailwind CSS', 'React.js', 'Node.js', 'Express.js'],
     image: project1,
     alt: 'Avicenna Enterprise Solution Project',
+    link: '#',
   },
   {
     title: 'JKD Pakistan',
@@ -19,6 +20,7 @@ const projectData = [
     tech: ['HTML', 'Tailwind CSS', 'Javascript'],
     image: project2,
     alt: 'Portfolio Project',
+    link: '#',
   },
   {
     title: 'Limelight Performance Tracking Dashboard',
@@ -27,6 +29,7 @@ const projectData = [
     tech: ['HTML', 'TailwindCSS', 'Javascript', 'React.js', 'Express.js'],
     image: project3,
     alt: 'Limelight Dashboard',
+    link: '#',
   },
 ];
 
@@ -37,9 +40,11 @@ const Projects = () => {
 
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 px-4 md:px-10'>
         {projectData.map((project, index) => (
-          <div
+          <a
             key={index}
-            className='bg-neutral-900 text-white rounded-2xl shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300'
+            href={project.link}
+            
+            className='bg-neutral-900 text-white rounded-2xl shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300 block'
           >
             <div className='w-full h-48 mb-4 flex items-center justify-center'>
               <img
@@ -60,7 +65,7 @@ const Projects = () => {
                 </span>
               ))}
             </div>
-          </div>
+          </a>
         ))}
       </div>
     </div>
@@ -68,4 +73,3 @@ const Projects = () => {
 };
 
 export default Projects;
-
