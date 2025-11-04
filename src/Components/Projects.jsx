@@ -14,6 +14,33 @@ const projectData = [
     link: '#',
   },
   {
+    title: 'Avicenna Enterprise Solution',
+    description:
+      'Avicenna Enterprise Solutions delivers innovative web, mobile, and AI-driven digital solutions that help businesses grow with quality, reliability, and scalability.',
+    tech: ['HTML', 'Tailwind CSS', 'React.js', 'Node.js', 'Express.js'],
+    image: project1,
+    alt: 'Avicenna Enterprise Solution Project',
+    link: '#',
+  },
+  {
+    title: 'Avicenna Enterprise Solution',
+    description:
+      'Avicenna Enterprise Solutions delivers innovative web, mobile, and AI-driven digital solutions that help businesses grow with quality, reliability, and scalability.',
+    tech: ['HTML', 'Tailwind CSS', 'React.js', 'Node.js', 'Express.js'],
+    image: project1,
+    alt: 'Avicenna Enterprise Solution Project',
+    link: '#',
+  },
+  {
+    title: 'Avicenna Enterprise Solution',
+    description:
+      'Avicenna Enterprise Solutions delivers innovative web, mobile, and AI-driven digital solutions that help businesses grow with quality, reliability, and scalability.',
+    tech: ['HTML', 'Tailwind CSS', 'React.js', 'Node.js', 'Express.js'],
+    image: project1,
+    alt: 'Avicenna Enterprise Solution Project',
+    link: '#',
+  },
+  {
     title: 'JKD Pakistan',
     description:
       'A portfolio project built using JavaScript (along with HTML and Tailwind CSS) to showcase your skills, projects, and contact information. It reflects technical and design abilities.',
