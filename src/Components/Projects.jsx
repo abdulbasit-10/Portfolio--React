@@ -2,6 +2,9 @@ import React from 'react';
 import project1 from '../assets/Project1.png';
 import project2 from '../assets/Project2.png';
 import project3 from '../assets/Project3.png';
+import project4 from '../assets/Project4.png';
+import project5 from '../assets/Project5.png';
+import project6 from '../assets/Project6.png';
 
 const projectData = [
   {
@@ -11,54 +14,43 @@ const projectData = [
     tech: ['HTML', 'Tailwind CSS', 'React.js', 'Node.js', 'Express.js'],
     image: project1,
     alt: 'Avicenna Enterprise Solution Project',
-    link: '#',
   },
   {
-    title: 'Avicenna Enterprise Solution',
-    description:
-      'Avicenna Enterprise Solutions delivers innovative web, mobile, and AI-driven digital solutions that help businesses grow with quality, reliability, and scalability.',
-    tech: ['HTML', 'Tailwind CSS', 'React.js', 'Node.js', 'Express.js'],
-    image: project1,
-    alt: 'Avicenna Enterprise Solution Project',
-    link: '#',
+    title: 'AI Tool Finder',
+    description: `Built a platform to explore and filter AI tools with advanced search and category filters. Developed UI, admin dashboard (CRUD), and database system for tool management.`,
+    tech: ['HTML', 'Tailwind CSS', 'React.js', 'Express.js', 'MongoDB'],
+    image: project2,
+    alt: 'AI Tool Finder Project',
   },
   {
-    title: 'Avicenna Enterprise Solution',
+    title: 'Study Studio',
     description:
-      'Avicenna Enterprise Solutions delivers innovative web, mobile, and AI-driven digital solutions that help businesses grow with quality, reliability, and scalability.',
+      'Developed an educational platform with responsive UI for digital learning resources, offering a smooth user experience and optimized performance.',
     tech: ['HTML', 'Tailwind CSS', 'React.js', 'Node.js', 'Express.js'],
-    image: project1,
-    alt: 'Avicenna Enterprise Solution Project',
-    link: '#',
+    image: project3,
+    alt: 'Study Studio Project',
   },
   {
-    title: 'Avicenna Enterprise Solution',
-    description:
-      'Avicenna Enterprise Solutions delivers innovative web, mobile, and AI-driven digital solutions that help businesses grow with quality, reliability, and scalability.',
-    tech: ['HTML', 'Tailwind CSS', 'React.js', 'Node.js', 'Express.js'],
-    image: project1,
-    alt: 'Avicenna Enterprise Solution Project',
-    link: '#',
+    title: 'Planto Website',
+    description: `Built a full plant-store eCommerce site with product browsing, cart, and checkout. Integrated admin dashboard for adding, editing, and deleting products.`,
+    image: project4,
+    alt: 'Planto Project',
   },
   {
     title: 'JKD Pakistan',
-    description:
-      'A portfolio project built using JavaScript (along with HTML and Tailwind CSS) to showcase your skills, projects, and contact information. It reflects technical and design abilities.',
-    tech: ['HTML', 'Tailwind CSS', 'Javascript'],
-    image: project2,
+    description: `Created a complete organization website with landing page, student dashboard, and admin panel. Delivered end-to-end UI, backend APIs, and secure login system.`,
+    image: project5,
     alt: 'Portfolio Project',
-    link: '#',
   },
   {
     title: 'Limelight Performance Tracking Dashboard',
     description:
-      'A compact, data-driven dashboard that visualizes sales, footfall, product performance and conversion metrics to help retail teams monitor performance and act on insights in real time.',
-    tech: ['HTML', 'TailwindCSS', 'Javascript', 'React.js', 'Express.js'],
-    image: project3,
+      'Developed a data dashboard to monitor sales, footfall, and conversion KPIs with real-time analytics and interactive charts for retail insights.',
+    image: project6,
     alt: 'Limelight Dashboard',
-    link: '#',
   },
 ];
+
 
 const Projects = () => {
   return (
@@ -67,11 +59,9 @@ const Projects = () => {
 
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 px-4 md:px-10'>
         {projectData.map((project, index) => (
-          <a
+          <div
             key={index}
-            href={project.link}
-            
-            className='bg-neutral-900 text-white rounded-2xl shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300 block'
+            className='bg-neutral-900 text-white rounded-2xl shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300'
           >
             <div className='w-full h-48 mb-4 flex items-center justify-center'>
               <img
@@ -82,7 +72,7 @@ const Projects = () => {
             </div>
             <h3 className='text-xl font-semibold mb-2'>{project.title}</h3>
             <p className='text-sm mb-4'>{project.description}</p>
-            <div className='flex flex-wrap gap-2'>
+            {/* <div className='flex flex-wrap gap-2'>
               {project.tech.map((tech) => (
                 <span
                   key={tech}
@@ -91,8 +81,8 @@ const Projects = () => {
                   {tech}
                 </span>
               ))}
-            </div>
-          </a>
+            </div> */}
+          </div>
         ))}
       </div>
     </div>
