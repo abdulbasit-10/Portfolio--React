@@ -11,78 +11,83 @@ const projectData = [
     title: 'Avicenna Enterprise Solution',
     description:
       'Avicenna Enterprise Solutions delivers innovative web, mobile, and AI-driven digital solutions that help businesses grow with quality, reliability, and scalability.',
-    tech: ['HTML', 'Tailwind CSS', 'React.js', 'Node.js', 'Express.js'],
     image: project1,
     alt: 'Avicenna Enterprise Solution Project',
+    link: 'https://avicennaenterprise.com/',
   },
   {
     title: 'AI Tool Finder',
-    description: `Built a platform to explore and filter AI tools with advanced search and category filters. Developed UI, admin dashboard (CRUD), and database system for tool management.`,
-    tech: ['HTML', 'Tailwind CSS', 'React.js', 'Express.js', 'MongoDB'],
+    description: `Built a platform to explore and filter AI tools with advanced search and category filters.`,
     image: project2,
     alt: 'AI Tool Finder Project',
+    link: 'https://ai-tool-finder.vercel.app',
   },
   {
     title: 'Study Studio',
     description:
-      'Developed an educational platform with responsive UI for digital learning resources, offering a smooth user experience and optimized performance.',
-    tech: ['HTML', 'Tailwind CSS', 'React.js', 'Node.js', 'Express.js'],
+      'Developed an educational platform with responsive UI for digital learning resources.',
     image: project3,
     alt: 'Study Studio Project',
+    link: 'https://study-studio.vercel.app',
   },
   {
     title: 'Planto Website',
-    description: `Built a full plant-store eCommerce site with product browsing, cart, and checkout. Integrated admin dashboard for adding, editing, and deleting products.`,
+    description: `Plant-store eCommerce site with cart, checkout, and admin dashboard.`,
     image: project4,
     alt: 'Planto Project',
+    link: 'https://planto-project-9814.vercel.app/',
   },
   {
-    
     title: 'JKD Pakistan',
-    description: `Created a complete organization website with landing page, student dashboard, and admin panel. Delivered end-to-end UI, backend APIs, and secure login system.`,
+    description: `Organization website with landing page, student dashboard, and admin panel.`,
     image: project5,
-    alt: 'Portfolio Project',
+    alt: 'JKD Pakistan Project',
+    link: 'https://jkd-organization.vercel.app/',
   },
   {
-    title: 'Limelight Performance Tracking Dashboard',
+    title: 'Limelight Performance Dashboard',
     description:
-      'Developed a data dashboard to monitor sales, footfall, and conversion KPIs with real-time analytics and interactive charts for retail insights.',
+      'Data dashboard with real-time analytics and interactive charts for insights.',
     image: project6,
     alt: 'Limelight Dashboard',
+    link: 'https://limelight.trionex.pk/dashboard-1',
   },
 ];
-
 
 const Projects = () => {
   return (
     <div className='border-b border-neutral-900 pb-24'>
       <h2 className='my-20 text-center text-4xl font-bold'>Projects</h2>
 
-      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 px-4 md:px-10'>
+      <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 px-4 md:px-10'>
         {projectData.map((project, index) => (
           <div
             key={index}
-            className='bg-neutral-900 text-white rounded-2xl shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300'
+            className='bg-black text-gray-500 rounded-2xl shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300 w-full max-w-[350px] mx-auto flex flex-col justify-between h-full'
           >
-            <div className='w-full h-48 mb-4 flex items-center justify-center'>
-              <img
-                src={project.image}
-                alt={project.alt}
-                className='h-full object-contain rounded-lg'
-              />
+            <div>
+              <div className='w-full h-40 mb-10 flex items-center justify-center'>
+                <img
+                  src={project.image}
+                  alt={project.alt}
+                  className='h-full w-auto object-contain'
+                />
+              </div>
+
+              <h3 className='text-xl font-semibold mb-2'>{project.title}</h3>
+
+              <p className='text-sm text-gray-400 mb-4'>{project.description}</p>
             </div>
-            <h3 className='text-xl font-semibold mb-2'>{project.title}</h3>
-            <p className='text-sm mb-4'>{project.description}</p>
-            {/* <div className='flex flex-wrap gap-2'>
-              {project.tech.map((tech) => (
-                <span
-                  key={tech}
-                  className='bg-green-700 text-white px-3 py-1 text-xs rounded-full'
-                >
-                  {tech}
-                </span>
-              ))}
-            </div> */}
+
+            {/* View Button */}
+            <a
+              href={project.link}
+              target='_blank'
+              rel='noopener noreferrer'
+              className='inline-block bg-green-600 text-white px-5 py-2 text-sm rounded-lg font-medium hover:bg-green-800 transition mt-4'
+            >
+              View
+            </a>
           </div>
         ))}
       </div>

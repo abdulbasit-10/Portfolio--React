@@ -6,7 +6,7 @@ const Experience = () => {
       <h1 className="my-20 text-center text-4xl font-bold">Experience</h1>
 
       <div className="p-6 rounded-lg mx-auto">
-        <h2 className="text-2xl font-semibold text-white">Technical Business Developer</h2>
+        <h2 className="text-2xl font-semibold text-gray-400">Technical Business Developer</h2>
         <p className="text-sm">November 2025 - Present</p>
         <h3 className="text-lg mb-4">JKD Pakistan</h3>
 

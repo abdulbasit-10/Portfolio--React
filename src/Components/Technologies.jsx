@@ -1,20 +1,25 @@
 import React from 'react'
-import { FaHtml5, FaCss3Alt, FaJsSquare, FaGithub, } from "react-icons/fa"
+import { FaHtml5, FaCss3Alt, FaJsSquare, FaGithub } from "react-icons/fa"
 import { BsBootstrap } from "react-icons/bs"
 import { RiReactjsLine } from "react-icons/ri"
-import { SiNextdotjs,
+import { 
+    SiNextdotjs,
     SiNodedotjs,
     SiExpress,
     SiMongodb,
     SiPostman,
     SiSwagger, 
-    SiTailwindcss } from "react-icons/si"
+    SiTailwindcss,
+    SiMongoose,
+    SiOpenai      // <-- Added Mongoose Icon
+} from "react-icons/si"
+
 const Technologies = () => {
   return (
     <div className='border-b border-neutral-900 pb-24'>
         <h1 className='my-20 text-center text-4xl font-bold'>Technologies</h1>
-        <div 
-        className='flex flex-wrap items-center justify-center gap-4'>
+
+        <div className='flex flex-wrap items-center justify-center gap-4'>
             <div className='rounded-2xl border-4 border-neutral-600 p-4'>
                 <FaHtml5 className='text-5xl text-orange-400' />
             </div>
@@ -28,13 +33,13 @@ const Technologies = () => {
                 <FaJsSquare className='text-5xl text-yellow-400' />
             </div>
             <div className='rounded-2xl border-4 border-neutral-600 p-4'>
-                <SiTailwindcss className='text-5xl text-yellow-400' />
+                <SiTailwindcss className='text-5xl text-sky-400' />
             </div>
             <div className='rounded-2xl border-4 border-neutral-600 p-4'>
                 <RiReactjsLine className='text-5xl text-cyan-400' />
             </div>
             <div className='rounded-2xl border-4 border-neutral-600 p-4'>
-                <SiNextdotjs className='text-5xl text-black dark:text-white' /> {/* Next.js icon after React */}
+                <SiNextdotjs className='text-5xl text-black dark:text-white' />
             </div>
             <div className='rounded-2xl border-4 border-neutral-600 p-4'>
                 <SiNodedotjs className='text-5xl text-green-600' />
@@ -42,9 +47,17 @@ const Technologies = () => {
             <div className='rounded-2xl border-4 border-neutral-600 p-4'>
                 <SiExpress className='text-5xl text-gray-800 dark:text-white' />
             </div>
+
+            {/* MongoDB */}
             <div className='rounded-2xl border-4 border-neutral-600 p-4'>
                 <SiMongodb className='text-5xl text-green-700' />
             </div>
+
+            {/* Mongoose (NEW) */}
+            <div className='rounded-2xl border-4 border-neutral-600 p-4'>
+                <SiMongoose className='text-5xl text-red-500' />
+            </div>
+
             <div className='rounded-2xl border-4 border-neutral-600 p-4'>
                 <SiPostman className='text-5xl text-orange-500' />
             </div>
@@ -53,6 +66,9 @@ const Technologies = () => {
             </div>
             <div className='rounded-2xl border-4 border-neutral-600 p-4'>
                 <FaGithub className='text-5xl text-white' />
+            </div>
+            <div className='rounded-2xl border-4 border-neutral-600 p-4'>
+                <SiOpenai className='text-5xl text-[#00A67E]' />
             </div>
         </div>
     </div>
