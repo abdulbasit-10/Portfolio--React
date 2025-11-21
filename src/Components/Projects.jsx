@@ -37,6 +37,7 @@ const projectData = [
     alt: 'Planto Project',
   },
   {
+    
     title: 'JKD Pakistan',
     description: `Created a complete organization website with landing page, student dashboard, and admin panel. Delivered end-to-end UI, backend APIs, and secure login system.`,
     image: project5,
