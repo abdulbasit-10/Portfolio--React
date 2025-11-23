@@ -20,7 +20,7 @@ const projectData = [
     description: `Built a platform to explore and filter AI tools with advanced search and category filters.`,
     image: project2,
     alt: 'AI Tool Finder Project',
-    link: 'https://ai-tool-finder.vercel.app',
+    link: 'https://aitoolfind.co/',
   },
   {
     title: 'Study Studio',
@@ -28,7 +28,7 @@ const projectData = [
       'Developed an educational platform with responsive UI for digital learning resources.',
     image: project3,
     alt: 'Study Studio Project',
-    link: 'https://study-studio.vercel.app',
+    link: 'https://studystudio.jerrizz.com/',
   },
   {
     title: 'Planto Website',
@@ -63,7 +63,7 @@ const Projects = () => {
         {projectData.map((project, index) => (
           <div
             key={index}
-            className='bg-black text-gray-500 rounded-2xl shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300 w-full max-w-[350px] mx-auto flex flex-col justify-between h-full'
+            className='bg-black text-white rounded-2xl shadow-lg p-6 hover:shadow-2xl transition-shadow duration-300 w-full max-w-[350px] mx-auto flex flex-col justify-between h-full'
           >
             <div>
               <div className='w-full h-40 mb-10 flex items-center justify-center'>
@@ -86,7 +86,7 @@ const Projects = () => {
               rel='noopener noreferrer'
               className='inline-block bg-green-600 text-white px-5 py-2 text-sm rounded-lg font-medium hover:bg-green-800 transition mt-4'
             >
-              View
+              Opens the live project in a new tab.
             </a>
           </div>
         ))}
