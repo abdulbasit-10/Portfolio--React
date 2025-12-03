@@ -125,7 +125,6 @@ const Technologies = () => {
               </div>
             ))}
         </div>
-
     </div>
   )
 }
