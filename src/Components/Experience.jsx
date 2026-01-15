@@ -4,16 +4,37 @@ const Experience = () => {
   return (
     <div className="border-b border-neutral-900 pb-24">
       <h1 className="my-20 text-center text-4xl font-bold">Experience</h1>
+      
+      <div className="p-6 rounded-lg mx-auto">
+        <h2 className="text-2xl font-semibold text-white">Chief Executive Officer</h2>
+        <h3 className="text-lg mb-4">Encova Solutions Pvt Limited</h3>
+        <p className='text-sm'>November 2025 - Present</p>
+        <p className='mb-4'>I worked at JKD Pakistan as a Web Developer & Business Development Officer, contributing to 
+          client-focused digital solutions and supporting business growth. My responsibilities included building 
+          web interfaces, collaborating with clients to refine requirements, managing digital operations, and 
+          assisting with strategic planning to improve service delivery and client engagement.
+          
+          I am dedicated to creating real-world applications with smooth user experiences, reliable performance, 
+          and scalable architecture. From UI design to backend development, testing, and deployment, I prioritize 
+          clean code, performance optimization, and high-quality results aligned with both technical and business 
+          goals. </p>
+
 
       <div className="p-6 rounded-lg mx-auto">
         <h2 className="text-2xl font-semibold text-white">Technical Business Developer</h2>
-        <p className="text-sm">November 2025 - Present</p>
         <h3 className="text-lg mb-4">JKD Pakistan</h3>
+        <p className="text-sm">November 2025 - Present</p>
 
         <p className="mb-4">
-          I worked at JKD Pakistan as a Web Developer & Business Development Officer, contributing to client-focused digital solutions and supporting business growth. My responsibilities included building web interfaces, collaborating with clients to refine requirements, managing digital operations, and assisting with strategic planning to improve service delivery and client engagement.
-
-I am dedicated to creating real-world applications with smooth user experiences, reliable performance, and scalable architecture. From UI design to backend development, testing, and deployment, I prioritize clean code, performance optimization, and high-quality results aligned with both technical and business goals.
+          I worked at JKD Pakistan as a Web Developer & Business Development Officer, contributing to 
+          client-focused digital solutions and supporting business growth. My responsibilities included building 
+          web interfaces, collaborating with clients to refine requirements, managing digital operations, and 
+          assisting with strategic planning to improve service delivery and client engagement.
+          
+          I am dedicated to creating real-world applications with smooth user experiences, reliable performance, 
+          and scalable architecture. From UI design to backend development, testing, and deployment, I prioritize 
+          clean code, performance optimization, and high-quality results aligned with both technical and business 
+          goals.
         </p>
 
         {/* <div className="flex flex-wrap gap-2">
@@ -75,7 +96,9 @@ My role included adding new features, improving UI/UX, fixing bugs, and optimizi
         </div> */}
         </div>
       </div>
+      </div>
   );
+
 };
 
 export default Experience;

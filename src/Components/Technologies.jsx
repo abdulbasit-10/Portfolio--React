@@ -17,16 +17,17 @@ import {
     SiGooglecloud,
     SiSass,
     SiReactquery,
-    SiAxios
-} from "react-icons/si"
-import {
-  SiRedux,
-  SiTypescript,
-  SiDocker,
-  SiJsonwebtokens,
-  SiVercel,
-  SiGit
+    SiAxios,
+    SiRedux,
+    SiTypescript,
+    SiDocker,
+    SiJsonwebtokens,
+    SiVercel,
+    SiGit,
+    SiAngular,
+    SiWordpress
 } from "react-icons/si";
+
 
 const Technologies = () => {
   return (
@@ -46,12 +47,14 @@ const Technologies = () => {
               {icon: <RiReactjsLine className='text-5xl text-cyan-400'/>, name: "React"},
               {icon: <SiRedux className='text-5xl text-purple-500'/>, name: "Redux"},
               {icon: <SiNextdotjs className='text-5xl text-black dark:text-white'/>, name: "Next.js"},
+              {icon: <SiAngular className='text-5xl text-red-600'/>, name: "Angular"},
               {icon: <FaFigma className='text-5xl text-pink-500'/>, name: "Figma"},
               {icon: <SiSass className='text-5xl text-pink-600'/>, name: "Sass"},
               {icon: <div className='text-5xl font-bold text-blue-600'>MUI</div>, name: "Material UI"},
               {icon: <SiReactquery className='text-5xl text-purple-600'/>, name: "React Query"},
               {icon: <SiAxios className='text-5xl text-blue-500'/>, name: "Axios"},
               {icon: <div className='text-5xl font-bold text-purple-400'>FM</div>, name: "Framer Motion"},
+              {icon: <SiWordpress className='text-5xl text-blue-700'/>, name: "WordPress"}
             ].map((item, index) => (
               <div key={index} className='flex flex-col items-center'>
                 <div className='rounded-2xl border-4 border-neutral-600 p-4 flex items-center justify-center'>
@@ -71,12 +74,19 @@ const Technologies = () => {
               {icon: <SiJsonwebtokens className='text-5xl text-yellow-500'/>, name: "JWT"},
               {icon: <SiMongodb className='text-5xl text-green-700'/>, name: "MongoDB"},
               {icon: <SiMongoose className='text-5xl text-red-500'/>, name: "Mongoose"},
+              {icon: <SiNextdotjs className='text-5xl text-black dark:text-white'/>, name: "Next.js API Routes"},
+              { icon: <div className="text-5xl font-bold text-purple-500">N</div>, name: "Nest.js" },
+              { icon: <div className="text-5xl font-bold text-blue-400">P</div>, name: "PostgreSQL" },
+              { icon: <div className="text-5xl font-bold text-pink-500">G</div>, name: "GraphQL" },
+              // { icon: <SiWordpress className="text-5xl text-blue-700" />, name: "WordPress Backend" },
+              {icon: <SiAngular className='text-5xl text-red-600'/>, name: "Angular Backend"},
+              {icon: <SiWordpress className='text-5xl text-blue-700'/>, name: "WordPress Backend"}
             ].map((item, index) => (
               <div key={index} className='flex flex-col items-center'>
                 <div className='rounded-2xl border-4 border-neutral-600 p-4 flex items-center justify-center'>
                   {item.icon}
                 </div>
-                <p className='text-white mt-2 text-sm'>{item.name}</p>
+                <p className='text-white mt-2 text-sm text-center'>{item.name}</p>
               </div>
             ))}
         </div>
@@ -91,6 +101,9 @@ const Technologies = () => {
               {icon: <SiPostman className='text-5xl text-orange-500'/>, name: "Postman"},
               {icon: <SiSwagger className='text-5xl text-green-500'/>, name: "Swagger"},
               {icon: <SiVercel className='text-5xl text-white'/>, name: "Vercel"},
+              { icon: <div className="text-5xl font-bold text-red-500">J</div>, name: "Jenkins" },
+              { icon: <div className="text-5xl font-bold text-orange-500">A</div>, name: "AWS" },
+              { icon: <div className="text-5xl font-bold text-green-600">T</div>, name: "Terraform" }
             ].map((item, index) => (
               <div key={index} className='flex flex-col items-center'>
                 <div className='rounded-2xl border-4 border-neutral-600 p-4 flex items-center justify-center'>
@@ -109,13 +122,13 @@ const Technologies = () => {
               {icon: <SiTensorflow className='text-5xl text-orange-600' />, name: "TensorFlow"},
               {icon: <SiHuggingface className='text-5xl text-orange-400' />, name: "Hugging Face"},
               {icon: <SiGooglecloud className='text-5xl text-blue-500' />, name: "Google Cloud AI"},
+              { icon: <div className="text-5xl font-bold text-red-500">P</div>, name: "PyTorch" },
+              { icon: <div className="text-5xl font-bold text-purple-500">S</div>, name: "Scikit-learn" },
               {icon: <div className='text-5xl font-bold text-pink-500'>G</div>, name: "Gemini AI"},
               {icon: <div className='text-5xl font-bold text-purple-400'>V</div>, name: "Vapi AI"},
               {icon: <div className='text-5xl font-bold text-red-500'>L</div>, name: "Loveable AI"},
               {icon: <div className='text-5xl font-bold text-cyan-400'>C</div>, name: "Cursor AI"},
               {icon: <div className='text-5xl font-bold text-yellow-400'>Ch</div>, name: "Chatbot AI"},
-            //   {icon: <div className='text-5xl font-bold text-green-500'>J</div>, name: "Jasper AI"},
-            //   {icon: <div className='text-5xl font-bold text-blue-600'>B</div>, name: "Bard AI"},
             ].map((item, index) => (
               <div key={index} className='flex flex-col items-center'>
                 <div className='rounded-2xl border-4 border-neutral-600 p-4 flex items-center justify-center'>
