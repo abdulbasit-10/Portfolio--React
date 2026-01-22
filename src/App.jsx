@@ -1,11 +1,11 @@
-import React from 'react'
-import Navbar from "./Components/Navbar"
-import Hero from './Components/Hero'
-import About from './Components/About'
-import Technologies from './Components/Technologies'
-import Experience from './Components/Experience'
-import Projects from './Components/Projects'
-import Contact from './Components/Contact'
+import React from "react";
+import Header from "./Components/Header";
+import Home from "./Home";
+import About from "./About";
+import Technologies from "./Technologies";
+import Experience from "./Experience";
+import Projects from "./Projects";
+import Contact from "./Contact";
 
 const App = () => {
   return (
@@ -20,7 +20,7 @@ const App = () => {
       >
         {/* Main Content */}
         <div className="container mx-auto px-8">
-          <Navbar />
+          <Header />
           <Hero />
           <About />
           <Technologies />
@@ -30,7 +30,7 @@ const App = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
