@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "./Components/Header";
+import Navbar from "./Components/Header";
 import Home from "./Home";
 import About from "./About";
 import Technologies from "./Technologies";
@@ -20,8 +20,8 @@ const App = () => {
       >
         {/* Main Content */}
         <div className="container mx-auto px-8">
-          <Header />
-          <Hero />
+          <Navbar />
+          <Home />
           <About />
           <Technologies />
           <Experience />

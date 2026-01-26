@@ -18,7 +18,7 @@ const Experience = () => {
           and scalable architecture. From UI design to backend development, testing, and deployment, I prioritize 
           clean code, performance optimization, and high-quality results aligned with both technical and business 
           goals. </p>
-
+      </div>
 
       <div className="p-6 rounded-lg mx-auto">
         <h2 className="text-2xl font-semibold text-white">Technical Business Developer</h2>
@@ -36,19 +36,10 @@ const Experience = () => {
           clean code, performance optimization, and high-quality results aligned with both technical and business 
           goals.
         </p>
+      </div>
 
-        {/* <div className="flex flex-wrap gap-2">
-          {["HTML 5", "Javascript", "React.js", "Tailwind CSS", "Next.js", "Node.js", "Express.js", "MongoDB"].map((tech) => (
-            <span
-              key={tech}
-              className="bg-green-800 text-white px-3 py-1 rounded-full text-sm"
-            >
-              {tech}
-            </span>
-          ))}
-        </div> */}
-
-        <h2 className="text-2xl font-semibold text-white pt-10">MERN Stack Developer</h2>
+      <div className="p-6 rounded-lg mx-auto">
+        <h2 className="text-2xl font-semibold text-white">MERN Stack Developer</h2>
         <p className="text-sm">April 2025 - October 2025</p>
         <h3 className="text-lg mb-4">Encoder Bytes Pvt Limited</h3>
 
@@ -59,48 +50,24 @@ On the backend, I worked with Node.js, Express.js, and MongoDB to develop secure
 
 My focus has been on creating real-world solutions with smooth user experiences, strong functionality, and reliable performance across the full development lifecycle.
         </p>
+      </div>
 
-        {/* <div className="flex flex-wrap gap-2">
-          {["HTML 5", "Javascript", "React.js", "Tailwind CSS", "Next.js", "Node.js", "Express.js", "MongoDB"].map((tech) => (
-            <span
-              key={tech}
-              className="bg-green-800 text-white px-3 py-1 rounded-full text-sm"
-            >
-              {tech}
-            </span>
-          ))}
-        </div> */}
-
-        <h2 className="text-2xl font-semibold text-white pt-10">Web Developer</h2>
+      <div className="p-6 rounded-lg mx-auto">
+        <h2 className="text-2xl font-semibold text-white">Web Developer</h2>
         <p className="text-sm">Nov 2024 - Mar 2025</p>
         <h3 className="text-lg mb-4">Zgalleria</h3>
 
         <p className="mb-4">
-           As a Web Developer, I was responsible for designing, developing, and maintaining the company’s website and web applications. I worked with modern technologies like HTML, CSS, JavaScript, and React to build responsive, user-friendly, and high-performance interfaces.
+           As a Web Developer, I was responsible for designing, developing, and maintaining the company's website and web applications. I worked with modern technologies like HTML, CSS, JavaScript, and React to build responsive, user-friendly, and high-performance interfaces.
 
 During this period, I also designed and developed the website for Zgalleria, ensuring a modern layout, smooth functionality, and an optimized user experience.
 
 My role included adding new features, improving UI/UX, fixing bugs, and optimizing overall site performance. I collaborated with different teams to deliver clean, scalable, and reliable web solutions while following best development practices.
 
         </p>
-
-        {/* <div className="flex flex-wrap gap-2">
-          {["HTML 5", "Javascript", "TailwindCSS", "React.js", "Next.js", "Node.js", "Express.js", "MongoDB"].map((tech) => (
-            <span
-              key={tech}
-              className="bg-green-800 text-white px-3 py-1 rounded-full text-sm"
-            >
-              {tech}
-            </span>
-          ))}
-        </div> */}
-        </div>
       </div>
-      </div>
+    </div>
   );
-
 };
 
 export default Experience;
-
-

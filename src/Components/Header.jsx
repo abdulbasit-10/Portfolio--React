@@ -9,6 +9,19 @@ import { SiUpwork } from "react-icons/si";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+  const navLinks = [
+    { name: 'Home', id: 'home' },
+    { name: 'About Me', id: 'about' },
+    { name: 'Technologies', id: 'technologies' },
+    { name: 'Experience', id: 'experience' },
+    { name: 'Projects', id: 'projects' },
+    { name: 'Contact Us', id: 'contact' }
+  ];
+
+  const handleNavClick = () => {
+    setIsOpen(false);
+  };
+
   return (
     <div className='mb-20 pt-6 relative'>
       <div className='flex items-center justify-between px-4'>
@@ -24,7 +37,20 @@ const Navbar = () => {
           </Link>
         </div>
 
-        {/* Desktop Icons */}
+        {/* Desktop Navigation Links */}
+        <div className='hidden md:flex items-center gap-8 text-white text-lg'>
+          {navLinks.map((link) => (
+            <a 
+              key={link.id}
+              href={`#${link.id}`}
+              className='hover:text-cyan-400 transition duration-300'
+            >
+              {link.name}
+            </a>
+          ))}
+        </div>
+
+        {/* Desktop Social Icons */}
         <div className='hidden md:flex items-center gap-10 text-3xl text-white'>
           <a href="https://www.linkedin.com/in/abdul-basit-1039b522b/" target="_blank" rel="noopener noreferrer">
             <FaLinkedin />
@@ -48,16 +74,28 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="absolute right-4 mt-2 w-40 rounded-md bg-neutral-900 shadow-lg p-4 flex flex-col gap-3 text-white text-2xl md:hidden z-50">
-          <a href="https://www.linkedin.com/in/abdul-basit-1039b522b/" target="_blank" rel="noopener noreferrer">
-            <FaLinkedin />
-          </a>
-          <a href="https://github.com/abdulbasit-10" target="_blank" rel="noopener noreferrer">
-            <FaGithub />
-          </a>
-          <a href="https://x.com/ba61256888?s=21" target="_blank" rel="noopener noreferrer">
-            <FaSquareXTwitter />
-          </a>
+        <div className="absolute right-4 mt-2 w-48 rounded-md bg-neutral-900 shadow-lg p-4 flex flex-col gap-4 text-white md:hidden z-50">
+          {navLinks.map((link) => (
+            <a 
+              key={link.id}
+              href={`#${link.id}`}
+              className='hover:text-cyan-400 transition duration-300 text-base'
+              onClick={handleNavClick}
+            >
+              {link.name}
+            </a>
+          ))}
+          <div className='border-t border-neutral-700 pt-4 flex flex-col gap-3 text-2xl'>
+            <a href="https://www.linkedin.com/in/abdul-basit-1039b522b/" target="_blank" rel="noopener noreferrer">
+              <FaLinkedin />
+            </a>
+            <a href="https://github.com/abdulbasit-10" target="_blank" rel="noopener noreferrer">
+              <FaGithub />
+            </a>
+            <a href="https://x.com/ba61256888?s=21" target="_blank" rel="noopener noreferrer">
+              <FaSquareXTwitter />
+            </a>
+          </div>
         </div>
       )}
     </div>

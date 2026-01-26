@@ -1,8 +1,7 @@
 import React from 'react'
-import bgmain from '../assets/bgmain.webp';
+// import bgmain from '../assets/bgmain.webp'
 
-
-const Hero = () => {
+const Home = () => {
   return (
     <div className='border-b border-neutral-900 pb-4 lg:mb-35'>
         <div className='flex flex-wrap'>
@@ -32,17 +31,15 @@ const Hero = () => {
                 </div>
             </div>
 
-            <div className='w-full lg:w-1/2 lg:py-8 '>
+            {/* <div className='w-full lg:w-1/2 lg:py-8 '>
             <div className='flex justify-end'>
                 <img
                     src={bgmain} alt="Abdul Basit" className='w-[400px] h-[400px]'/>
             </div>
-            </div>
+            </div> */}
         </div>
     </div>
   )
 }
 
-
-export default Hero
-
+export default Home
