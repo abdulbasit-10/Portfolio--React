@@ -10,12 +10,12 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
-    { name: 'Home', id: 'home' },
-    { name: 'About Me', id: 'about' },
-    { name: 'Technologies', id: 'technologies' },
-    { name: 'Experience', id: 'experience' },
-    { name: 'Projects', id: 'projects' },
-    { name: 'Contact Us', id: 'contact' }
+    { name: 'Home', id: 'home', path: '/' },
+    { name: 'About Me', id: 'about', path: '/about' },
+    { name: 'Technologies', id: 'technologies', path: '/technologies' },
+    { name: 'Experience', id: 'experience', path: '/experience' },
+    { name: 'Projects', id: 'projects', path: '/projects' },
+    { name: 'Contact Us', id: 'contact', path: '/contact' }
   ];
 
   const handleNavClick = () => {
@@ -23,8 +23,8 @@ const Navbar = () => {
   };
 
   return (
-    <div className='mb-20 pt-6 relative'>
-      <div className='flex items-center justify-between px-4'>
+    <div className='fixed top-0 left-0 right-0 z-50 mb-20 pt-0'>
+      <div className='flex items-center justify-between px-4 bg-gray-900 bg-opacity-95'>
         
         {/* Logo (Clickable - Home) */}
         <div className='text-white flex items-center'>
@@ -38,20 +38,20 @@ const Navbar = () => {
         </div>
 
         {/* Desktop Navigation Links */}
-        <div className='hidden md:flex items-center gap-8 text-white text-lg'>
+        <div className='hidden md:flex items-center gap-10 text-white text-lg'>
           {navLinks.map((link) => (
-            <a 
+            <Link 
               key={link.id}
-              href={`#${link.id}`}
+              to={link.path}
               className='hover:text-cyan-400 transition duration-300'
             >
               {link.name}
-            </a>
+            </Link>
           ))}
         </div>
 
         {/* Desktop Social Icons */}
-        <div className='hidden md:flex items-center gap-10 text-3xl text-white'>
+        {/* <div className='hidden md:flex items-center gap-10 text-3xl text-white'>
           <a href="https://www.linkedin.com/in/abdul-basit-1039b522b/" target="_blank" rel="noopener noreferrer">
             <FaLinkedin />
           </a>
@@ -61,7 +61,7 @@ const Navbar = () => {
           <a href="https://www.upwork.com/freelancers/~01e7e47f2d13ebf307" target="_blank" rel="noopener noreferrer">
             <SiUpwork />
           </a>
-        </div>
+        </div> */}
 
         {/* Hamburger Icon (Mobile) */}
         <div 
@@ -76,14 +76,14 @@ const Navbar = () => {
       {isOpen && (
         <div className="absolute right-4 mt-2 w-48 rounded-md bg-neutral-900 shadow-lg p-4 flex flex-col gap-4 text-white md:hidden z-50">
           {navLinks.map((link) => (
-            <a 
+            <Link 
               key={link.id}
-              href={`#${link.id}`}
+              to={link.path}
               className='hover:text-cyan-400 transition duration-300 text-base'
               onClick={handleNavClick}
             >
               {link.name}
-            </a>
+            </Link>
           ))}
           <div className='border-t border-neutral-700 pt-4 flex flex-col gap-3 text-2xl'>
             <a href="https://www.linkedin.com/in/abdul-basit-1039b522b/" target="_blank" rel="noopener noreferrer">

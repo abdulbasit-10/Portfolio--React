@@ -1,5 +1,7 @@
 import React from "react";
+import { Routes, Route } from "react-router-dom";
 import Navbar from "./Components/Header";
+import Footer from "./Components/Footer";
 import Home from "./Home";
 import About from "./About";
 import Technologies from "./Technologies";
@@ -21,14 +23,17 @@ const App = () => {
         {/* Main Content */}
         <div className="container mx-auto px-8">
           <Navbar />
-          <Home />
-          <About />
-          <Technologies />
-          <Experience />
-          <Projects />
-          <Contact />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/technologies" element={<Technologies />} />
+            <Route path="/experience" element={<Experience />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

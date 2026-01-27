@@ -1,16 +1,16 @@
 import React from 'react'
-// import bgmain from '../assets/bgmain.webp'
+import about from './assets/about.png';
 
 const Home = () => {
   return (
-    <div className='border-b border-neutral-900 pb-4 lg:mb-35'>
+    <div className='border-b border-neutral-900 pb-4 lg:mb-35 pt-30'>
         <div className='flex flex-wrap'>
             <div className='w-full lg:w-1/2'>
                 <div className='flex flex-col items-center lg:items-start'>
                     <h1 className='pb-5 text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-thin tracking-tight text-[#84A98C]'>
                         Engr Abdul Basit</h1>
                     <span 
-                    className='bg-clip-text text-4xl font-bold text-[#14B8A6]'>Full Stack Engineer</span>
+                    className='bg-clip-text text-3xl font-bold text-[#14B8A6]'>CEO & Founder – Encova Solutions Pvt Limited</span>
                     <p
                     className='my-2 max-w-xl py-4'>I am a Software Engineer and the CEO & Founder of Encova 
                     Solutions, specializing in the design, development, and maintenance of modern, scalable web 
@@ -31,12 +31,12 @@ const Home = () => {
                 </div>
             </div>
 
-            {/* <div className='w-full lg:w-1/2 lg:py-8 '>
+            <div className='w-full lg:w-1/2 lg:py-8 '>
             <div className='flex justify-end'>
                 <img
-                    src={bgmain} alt="Abdul Basit" className='w-[400px] h-[400px]'/>
+                    src={about} alt="Abdul Basit" className='w-[400px] h-[400px]'/>
             </div>
-            </div> */}
+            </div>
         </div>
     </div>
   )
